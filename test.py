@@ -1,15 +1,29 @@
 from tensorflow.keras import models
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
+import numpy as np
+from tensorflow.keras.models import load_model
+import cv2
+
 
 model = models.load_model("CNNmodel.h5")
 
-test_datagen = ImageDataGenerator(rescale=1./255)
-test_set = test_datagen.flow_from_directory('test',
-                                            target_size=(64, 64),
-                                            save_format='jpg',
-                                            class_mode='categorical',
-                                            batch_size=12,
-                                            )
-result = model.predict_generator(test_set,verbose=0)
+model.compile(loss='binary_crossentropy',
 
-print(result)
+              optimizer='rmsprop',
+
+              metrics=['accuracy'])
+
+img = cv2.imread('tester/mango.jpg')
+
+img = cv2.resize(img,(64,64))
+
+img = np.reshape(img,[1,64,64,3])
+
+
+classes = model.predict_classes(img)
+
+if(classes == [0]):
+    print("Jackfruit")
+else:
+    print("Mango")
+

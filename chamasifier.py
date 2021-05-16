@@ -55,7 +55,7 @@ training_set = train_datagen.flow_from_directory('train',
                                                  target_size=(64, 64),
                                                  class_mode='categorical',
                                                  batch_size=12,  # Total no. of batches
-                                                )
+                                                 )
 test_set = test_datagen.flow_from_directory('test',
                                             target_size=(64, 64),
                                             save_format='jpg',
@@ -67,7 +67,7 @@ test_set = test_datagen.flow_from_directory('test',
 model.fit_generator(
     training_set,
     validation_steps=35,
-    epochs=20,
+    epochs=40,
     validation_data=test_set,
 )
 
