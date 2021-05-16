@@ -1,5 +1,4 @@
 from tensorflow.keras import models
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 from tensorflow.keras.models import load_model
 import cv2
