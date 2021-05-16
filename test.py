@@ -10,6 +10,6 @@ test_set = test_datagen.flow_from_directory('test',
                                             class_mode='categorical',
                                             batch_size=12,
                                             )
-result = model.predict_generator(test_set,verbose=1)
+result = model.predict_generator(test_set,verbose=0)
 
 print(result)
