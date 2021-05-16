@@ -1,6 +1,5 @@
 from tensorflow.keras import models
 import numpy as np
-from tensorflow.keras.models import load_model
 import cv2
 
 
