@@ -64,7 +64,7 @@ test_set = test_datagen.flow_from_directory('test',
                                             )
 
 # training the model             error_here
-model.fit_generator(
+model.fit(
     training_set,
     validation_steps=35,
     epochs=40,

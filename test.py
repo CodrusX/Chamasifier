@@ -12,7 +12,7 @@ img = cv2.resize(img,(64,64))
 img = np.reshape(img,[1,64,64,3])
 
 
-classes = model.predict_classes(img)
+classes = np.argmax(model.predict(img),axis=-1)
 
 if(classes == [0]):
     print("Jackfruit")
