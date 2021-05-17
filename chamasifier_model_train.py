@@ -8,15 +8,14 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras import backend as back
 
 
-
 img_width = 150
 img_height = 150
 train_data_dir = 'data/train'
 test_data_dir = 'data/test'
-train_samples = 10
-val_samples = 10
-epoches = 20
-batch_size = 5
+train_samples = 600
+val_samples = 250
+epoches = 200
+batch_size = 25
 
 if back.image_data_format() == 'channels_first':
     input_shape = (3, img_width, img_height)
@@ -29,12 +28,13 @@ train_data_gen = ImageDataGenerator(
     rescale=1./255,
     shear_range=0.2,
     zoom_range=0.2,
-    horizontal_flip=True
+    horizontal_flip=True, vertical_flip=True, rotation_range=0.5,
 )
 
 test_data_gen = ImageDataGenerator(rescale=1./255)
 
 train_generator = train_data_gen.flow_from_directory(directory=train_data_dir,
+                                                     save_format='jpeg',
                                                      target_size=(
                                                          img_width, img_height),
                                                      classes=[
@@ -43,6 +43,7 @@ train_generator = train_data_gen.flow_from_directory(directory=train_data_dir,
                                                      batch_size=batch_size)
 
 test_generator = test_data_gen.flow_from_directory(directory=test_data_dir,
+                                                   save_format='jpeg',
                                                    target_size=(
                                                        img_width, img_height),
                                                    classes=[
@@ -107,3 +108,5 @@ print('saving weights to chamasifier_1.h5')
 model.save('models/chamasifier_1.h5')
 
 print('all weights saved successfully !!')
+
+

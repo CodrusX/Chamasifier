@@ -1,0 +1,5 @@
+for f in *.jpeg; do
+    a=0
+    mv -- "$f" "$a.jpeg"
+    a=$a+1
+done
