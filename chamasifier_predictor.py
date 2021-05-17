@@ -2,7 +2,7 @@
 
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras import models
-
+import numpy as np
 # Loading the model
 
 model = models.load_model('models/chamasifier_1.h5')
