@@ -1,4 +1,3 @@
-import numpy as np
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras import models
 import numpy as np
