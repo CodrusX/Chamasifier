@@ -1,10 +1,11 @@
-import numpy as np
+# Importing necessary libraries and packeges
+
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras import models
 
+# Loading the model
 
 model = models.load_model('models/chamasifier_1.h5')
-
 
 
 for i in range(100):
@@ -16,7 +17,6 @@ for i in range(100):
         print(str(i) +" is JackFruit")
     else:
         print(str(i) +" Mango")
-
 
 
 
