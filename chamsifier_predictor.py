@@ -11,6 +11,8 @@ img_pred = image.img_to_array(img_pred)
 img_pred = np.expand_dims(img_pred,axis=0)
 
 result = model.predict(img_pred)
+
+
 if result[0][0] == 0:
     print("JackFruit")
 else:
