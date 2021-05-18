@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+  <meta charset="UTF-8">
+  <title>Fruit Classifier</title>
+
+</head>
+<body >
+	<center >
+	
+		<h3>Uploaded Image: </h3>
+		<br><br>
+		<img src="{{url_for('send_image',filename=image_name)}}" />
+		<br>
+		{{text}}
+		<br><br>
+		<a  href="/" role="button">Predict Another image</a>
+	</center>
+
+</body>
+</html>
