@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-classes = ['This is JackFruit','This is Mango']
+classes = ['jackFruit','mango']
 
 @app.route("/")
 def index():
@@ -36,9 +36,9 @@ def upload():
         upload.save(destination)
         #import tensorflow as tf
         import numpy as np
-        from keras.preprocessing import image
+        from tensorflow.keras.preprocessing import image
+        from tensorflow.keras.models import load_model
 
-        from keras.models import load_model
         new_model = load_model('models/chamasifier_1.h5')
         new_model.summary()
         test_image = image.load_img('images\\'+filename,target_size=(150,150))
