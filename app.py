@@ -2,6 +2,10 @@ import os
 from uuid import uuid4
 
 from flask import Flask, request, render_template, send_from_directory
+import numpy as np
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import load_model
+#loading and running the model
 
 app = Flask(__name__)
 
@@ -36,14 +40,11 @@ def upload():
         print ("Save it to:", destination)
         upload.save(destination)
         
-        import numpy as np
-        from tensorflow.keras.preprocessing import image
-        from tensorflow.keras.models import load_model
-    #loading and running the model
+        
 
-        new_model = load_model('models/chamasifier_1.h5')
+        new_model = load_model(os.path.join(APP_ROOT, 'models/chamasifier_1.h5'))
         new_model.summary()
-        test_image = image.load_img('images\\'+filename,target_size=(150,150))
+        test_image = image.load_img(os.path.join(APP_ROOT,'images/'+filename),target_size=(150,150))
         test_image = image.img_to_array(test_image)
         test_image = np.expand_dims(test_image, axis = 0)
         result = new_model.predict(test_image)
