@@ -4,10 +4,8 @@ from uuid import uuid4
 from flask import Flask, request, render_template, send_from_directory
 
 app = Flask(__name__)
-# app = Flask(_name_, static_folder="images")
 
-
-
+#setting the target folder for saving images
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 classes = ['This is a JackFruit','This is a Mango','Sorry, I don\'t recognize this']
@@ -19,11 +17,10 @@ if not os.path.isdir(target_folder):
 @app.route("/")
 def index():
     return render_template("index.html")
-
+#saving the image from the user to target folder.
 @app.route("/upload", methods=["POST"])
 def upload():
     target = os.path.join(APP_ROOT, 'images/')
-    # target = os.path.join(APP_ROOT, 'static/')
     print(target)
     if not os.path.isdir(target):
             os.mkdir(target)
@@ -38,10 +35,11 @@ def upload():
         print ("Accept incoming file:", filename)
         print ("Save it to:", destination)
         upload.save(destination)
-        #import tensorflow as tf
+        
         import numpy as np
         from tensorflow.keras.preprocessing import image
         from tensorflow.keras.models import load_model
+    #loading and running the model
 
         new_model = load_model('models/chamasifier_1.h5')
         new_model.summary()
@@ -57,9 +55,8 @@ def upload():
             prediction = classes[2]
 
 
-    # return send_from_directory("images", filename, as_attachment=True)
     return render_template("result.html",image_name=filename, text=prediction)
-
+#function for loading image from the directory.
 @app.route('/upload/<filename>')
 def send_image(filename):
     return send_from_directory("images", filename)
