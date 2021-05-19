@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html >
-<head>
-  <meta charset="UTF-8">
-  <title>Chamasifier</title>
-</head>
-<body >
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Description" content="A simple fruit classifier">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+		<link rel="stylesheet" href="/static/css/style.css" media="all">
+		<title> Chamasifier </title>
+	</head>
+<body background="/static/background.jpg">
 
-	<div >
-		<center>
-			<h1 >Upload Image To Classify<br> Fruit</h1>
-			<strong>Choose Image:</strong>
-			<input type="file" name="file" accept="image/*" multiple> <br><br>
-			<input type="submit" value="Predict!" >
-		</center>
-	</div>
-</form>
+
+
+			<form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+
+				<div class="main">
+					
+						<h1 >Upload Image To Classify Fruit</h1>
+						<div class="ripple icon">
+							
+							<img width="50" src="https://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Apps-Windows8-Photos-icon.png">
+							<input id="file-id"    type="file" name="file" accept="image/jpeg" onchange="onChange()" multiple>
+						</div>
+						<img src="" id="id-img" >
+
+							<input class="ripple upload" type="submit" value="Predict" >
+							<div class="foot">by CodrusX</div>
+					
+				</div>
+			</form>
+			
+
+			<script>
+				const onChange = () => {
+					file = document.getElementById("file-id").files[0];
+					document.getElementById("id-img").src = URL.createObjectURL(file)
+				
+				}
+			</script>
 
 </body>
 </html>
