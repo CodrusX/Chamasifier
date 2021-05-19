@@ -46,9 +46,6 @@ def upload():
         print ("Accept incoming file:", filename)
         print ("Save it to:", destination)
         upload.save(destination)
-        
-        
-
         new_model = load_model(os.path.join(APP_ROOT, 'models/chamasifier_1.h5'))
         new_model.summary()
         test_image = image.load_img(os.path.join(APP_ROOT,'images/'+filename),target_size=(150,150))

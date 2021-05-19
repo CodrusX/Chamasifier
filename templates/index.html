@@ -25,7 +25,7 @@
 						</div>
 						<img src="" id="id-img" >
 
-							<input class="ripple upload" type="submit" value="Predict" >
+							<input class="ripple upload" id="up" type="submit" value="Predict" >
 							<div class="foot">by CodrusX</div>
 					
 				</div>
@@ -35,7 +35,10 @@
 			<script>
 				const onChange = () => {
 					file = document.getElementById("file-id").files[0];
-					document.getElementById("id-img").src = URL.createObjectURL(file)
+					if(file){
+						document.getElementById("up").style.display = "block";
+						document.getElementById("id-img").src = URL.createObjectURL(file)
+					}
 				
 				}
 			</script>

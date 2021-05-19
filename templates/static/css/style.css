@@ -108,6 +108,14 @@ a{
 }
 
 .upload{
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    box-shadow: #242424 0.5rem 0.5rem 16px;
+    border-radius: 0.5rem;
+}
+.back{
     margin-top: 2rem;
     padding: 1rem;
     background-color: #f7f7f7;
