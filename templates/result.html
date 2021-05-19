@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
 
-  <meta charset="UTF-8">
-  <meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="Description" content="A simple fruit classifier">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="A simple fruit classifier">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="/static/css/style.css" media="all">
-  <title>Chamasifier</title>
+	<link rel="stylesheet" href="/static/css/style.css" media="all">
+	<title>Chamasifier</title>
 
 </head>
+
 <body background="/static/background.jpg">
-	<center >
-	
+	<center>
+
 		<h1>Chamasifier </h1>
 		<br><br>
 		<img src="{{url_for('send_image',filename=image_name)}}" id="id-img" />
 		<br>
 		<h2>{{text}}</h2>
 		<br><br>
-		<a  class="upload ripple" href="/" role="button">Predict Another image</a>
+		<a class="upload ripple" href="/" role="button">Predict Another image</a>
 	</center>
 
 </body>
+
 </html>

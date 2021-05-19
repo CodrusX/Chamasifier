@@ -52,7 +52,6 @@ test_generator = test_data_gen.flow_from_directory(directory=test_data_dir,
                                                    batch_size=batch_size)
 
 
-
 # Initializing CNN model
 
 model = Sequential()
@@ -108,5 +107,3 @@ print('saving weights to chamasifier_1.h5')
 model.save('models/chamasifier_1.h5')
 
 print('all weights saved successfully !!')
-
-
