@@ -17,7 +17,7 @@
 
 ### What is Chamasifier?
 
-[CHAMASIFIER](http://ec2-3-17-203-44.us-east-2.compute.amazonaws.com:8080/) a.k.a CHA-kka MA-nga clas-SIFIER is a machine learning project which can identify the two of the fruits 'Chacka' and 'Manga'(JackFruit and Mango).The ML algorithm used here is Convolutional Neural Network. This algorithm can classify images based on the features.Tensorflow library is used here for the purpose of creation,training and testing of the model.For the website implementation we used the flask library of python.
+[CHAMASIFIER](http://ec2-3-17-203-44.us-east-2.compute.amazonaws.com:8080/) a.k.a CHA-kka MA-nga clas-SIFIER is a machine learning project which can identify the two of the fruits 'Chacka' and 'Manga'(JackFruit and Mango).The ML algorithm used here is Convolutional Neural Network. This algorithm can classify images based on the features.Tensorflow-Keras library is used here for the purpose of creation,training and testing of the model.For the website implementation we used the flask library of python.
 
 ### Installation
 
@@ -58,7 +58,7 @@ Click [here](http://ec2-3-17-203-44.us-east-2.compute.amazonaws.com:8080/) to se
 
 ### Contributing
 
-click [here](contributing.md) to see the details details.
+click [here](contributing.md) to see the details.
 
 
 #### Contributers
