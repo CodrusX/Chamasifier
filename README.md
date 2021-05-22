@@ -4,7 +4,7 @@
 
 <!--ts-->
 
--   [What is Chamasifier](#what-is-Chamasifier?)
+-   [What is Chamasifier?](#what-is-Chamasifier?)
 -   [Installation](#installation)
 -   [Features](#features)
 -   [Demo](#demo)
