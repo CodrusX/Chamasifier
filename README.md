@@ -37,7 +37,7 @@ It can be installed using
 The main features of Chamasifier are,
 
 -   Trained with over 600 images,
--   has an accuracy of ~0.7,
+-   has an accuracy of ~70%,
 -   it has 3 convolution layers and 3 pooling layers,
 -   2 dense hidden layers,
 -   rmsprop optimization.
