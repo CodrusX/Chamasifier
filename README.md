@@ -60,6 +60,15 @@ Click [here](http://ec2-3-17-203-44.us-east-2.compute.amazonaws.com:8080/) to se
 
 click [here](contributing.md) to see the details.
 
+#### Contributers
+
+TEAM ID:BFH/recVTOJ0fhTpNx2Tm/2021
+
+[xidhu](https://github.com/xidhu)
+
+[Arjun-K-S](https://github.com/Arjun-K-S)
+
+[graison-s](https://github.com/graison-s)
 
 
 ### License
