@@ -44,7 +44,7 @@ BFH/recVTOJ0fhTpNx2Tm/2021
 
 ## Link to product walkthrough
 
-[link to video]
+click [here](https://www.loom.com/share/3b1e292e660b4abebf5bf50b7d0196a3) to see the video.
 
 ## How it Works ?
 
@@ -53,7 +53,7 @@ BFH/recVTOJ0fhTpNx2Tm/2021
 
 ## Libraries used
 
-Library Name - Version
+The various libraries used in the project are listed in the [requirements.txt](requirements.txt) file.
 
 ## How to configure
 
