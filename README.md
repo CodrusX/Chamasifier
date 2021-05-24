@@ -50,7 +50,7 @@ link here
 
 1. Explaining the working of project
 
-[![Chamasifier](https://i9.ytimg.com/vi_webp/kcJ-GKiWBaI/mqdefault.webp?time=1621842300000&sqp=CPyyrYUG&rs=AOn4CLBnNzjub_glEpAD91ZXs4rG9QHbvA)](https://www.youtube.com/watch?v=kcJ-GKiWBaI "Chamasifier - Click to Watch!")
+[![Chamasifier](pictures/chamasifier.gif)](https://www.youtube.com/watch?v=kcJ-GKiWBaI "Chamasifier - Click to Watch!")
 
 ## Libraries used
 
