@@ -6,7 +6,7 @@
     -   [Features](#features)
     
 -   [Team Members](#team-members)
--   [Tead ID](#team-id)
+-   [Team ID](#team-id)
 -   [Link to product walkthrough](#link-to-product-walkthrough)
 -   [How it Works ?](#how-it-Works-?)
 -   [Libraries used](#libraries-used)
