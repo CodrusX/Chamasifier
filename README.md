@@ -7,7 +7,6 @@
     
 -   [Team Members](#team-members)
 -   [Team ID](#team-id)
--   [Link to product walkthrough](#link-to-product-walkthrough)
 -   [How it Works ?](#how-it-Works-?)
 -   [Libraries used](#libraries-used)
 -   [How to configure](#how-to-configure)
@@ -42,13 +41,9 @@ The main features of Chamasifier are,
 
 BFH/recVTOJ0fhTpNx2Tm/2021
 
-## Link to product walkthrough
-
-link here
-
 ## How it Works ?
 
-1. Explaining the working of project
+Chamasifer uses CNN(convolutional neural network) to do images recognition, images classifications. CNN image classifications takes an input image, process it and classify it under certain categories. The four steps for building a CNN model are convolution, max pooling, flattening, full connection. Convolution is the first layer to extract features from an input image. This layer preserves the relationship between pixels. Then the Pooling layers section would reduce the number of parameters when the images are too large. Flattening is converts the data into a 1-dimensional array for inputting it to the next layer. Max pooling takes the largest element from the rectified feature map.
 
 [![Chamasifier](pictures/Chamasifier.gif)](https://www.youtube.com/watch?v=kcJ-GKiWBaI "Chamasifier - Click to Watch!")
 
