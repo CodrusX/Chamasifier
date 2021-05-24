@@ -44,12 +44,13 @@ BFH/recVTOJ0fhTpNx2Tm/2021
 
 ## Link to product walkthrough
 
-Click [here](https://www.loom.com/share/3b1e292e660b4abebf5bf50b7d0196a3) to see the video.
+link here
 
 ## How it Works ?
 
 1. Explaining the working of project
-2. Embed video of project demo
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/3b1e292e660b4abebf5bf50b7d0196a3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ## Libraries used
 
